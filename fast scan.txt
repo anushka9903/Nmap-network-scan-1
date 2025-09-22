@@ -1,0 +1,62 @@
+Nmap scan report for reliance.reliance (192.168.29.1)
+Host is up (0.060s latency).
+MAC Address: 8C:A3:99:97:61:DC (Servercom (India) Private Limited)
+Nmap scan report for 192.168.29.7
+Host is up (0.055s latency).
+MAC Address: 48:5F:99:58:4A:DB (Cloud Network Technology (Samoa) Limited)
+Nmap scan report for 192.168.29.10
+Host is up (0.070s latency).
+MAC Address: C6:4A:70:D0:80:62 (Unknown)
+Nmap scan report for 192.168.29.12
+Host is up (0.16s latency).
+MAC Address: F8:28:19:CB:91:EB (Liteon Technology)
+Nmap scan report for 192.168.29.39
+Host is up (0.26s latency).
+MAC Address: 32:E3:8F:57:6B:F5 (Unknown)
+Nmap scan report for 192.168.29.52
+Host is up (0.15s latency).
+MAC Address: F0:A6:54:BB:FF:B5 (Cloud Network Technology Singapore PTE.)
+Nmap scan report for 192.168.29.66
+Host is up (0.065s latency).
+MAC Address: 9E:0D:21:B1:C2:96 (Unknown)
+Nmap scan report for 192.168.29.90
+Host is up (0.064s latency).
+MAC Address: 9A:10:93:54:3F:B9 (Unknown)
+Nmap scan report for 192.168.29.105
+Host is up (0.35s latency).
+MAC Address: BA:DE:C9:3E:BE:78 (Unknown)
+Nmap scan report for 192.168.29.114
+Host is up (0.021s latency).
+MAC Address: 98:25:4A:B4:6F:13 (TP-Link PTE.)
+Nmap scan report for 192.168.29.118
+Host is up (0.0080s latency).
+MAC Address: 40:86:CB:D9:64:0B (D-Link)
+Nmap scan report for 192.168.29.124
+Host is up (0.18s latency).
+MAC Address: CE:66:56:8F:9A:13 (Unknown)
+Nmap scan report for 192.168.29.136
+Host is up (0.15s latency).
+MAC Address: C6:43:C4:8D:79:19 (Unknown)
+Nmap scan report for 192.168.29.183
+Host is up (0.25s latency).
+MAC Address: E8:4C:4A:4C:37:DD (Amazon Technologies)
+Nmap scan report for 192.168.29.205
+Host is up (0.19s latency).
+MAC Address: B6:9B:B0:22:C6:31 (Unknown)
+Nmap scan report for 192.168.29.213
+Host is up (0.11s latency).
+MAC Address: 28:D0:43:61:BD:FC (AzureWave Technology)
+Nmap scan report for 192.168.29.215
+Host is up (0.044s latency).
+MAC Address: 0A:19:C8:F0:60:92 (Unknown)
+Nmap scan report for 192.168.29.228
+Host is up (0.089s latency).
+MAC Address: E2:1D:8C:06:60:DD (Unknown)
+Nmap scan report for 192.168.29.248
+Host is up (0.075s latency).
+MAC Address: 1A:85:7C:C5:DA:FF (Unknown)
+Stats: 0:00:11 elapsed; 255 hosts completed (19 up), 255 undergoing Host Discovery
+Parallel DNS resolution of 1 host. Timing: About 0.00% done
+Nmap scan report for 192.168.29.151
+Host is up.
+Nmap done: 256 IP addresses (20 hosts up) scanned in 11.90 seconds
