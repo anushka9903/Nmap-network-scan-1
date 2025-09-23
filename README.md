@@ -1,108 +1,66 @@
-Network Scanning Project using Nmap
+# Network Scanning Project using Nmap - Internship Task 1
 
-Project Overview:
+## Introduction
+Network scanning is a fundamental cybersecurity technique used to discover live hosts, detect open ports, and identify running services on a network. Nmap is one of the most popular tools for this purpose.  
 
-This project demonstrates network scanning using Nmap to identify live hosts, open ports, and running services. The project was performed for educational purposes with ethical cybersecurity practices—only authorized networks were scanned.
+This project demonstrates how to perform network scanning ethically, with the aim of learning security concepts rather than attacking unauthorized systems. Only authorized networks were scanned for educational purposes.  
 
-Initially, a full default scan was attempted, but due to network configurations and a large subnet, the scan took too long and returned limited results. A fast scan was then used to achieve meaningful results efficiently.
+## Objective
+- Learn how to perform network scanning using **Nmap**.  
+- Identify online hosts and detect open ports.  
+- Save scan results for documentation and analysis.  
+- Compare the effectiveness of **full scans vs. fast scans**.  
 
-Table of Contents:
+## Tools Used
+- **Nmap (v7.98)** – Network scanning tool.  
+- **Terminal / Command Prompt** – To run commands.  
+- **Text Editor** – For saving and reviewing scan results.  
 
--Objective
 
--Tools
-
--Initial Scan Attempt
-
--Fast Scan Method
-
--Saving Scan Results
-
--Results Interpretation
-
--References
-
-Objective:
-
-Learn how to perform network scanning using Nmap.
-
-Identify online hosts and detect open ports.
-
-Save scan results for documentation and analysis.
-
-Understand the difference between full scans and fast scans.
-
-Tools:
-Nmap (v7.98) – Network scanning tool
-
-Terminal / Command Prompt – To run commands
-
-Text Editor – For saving scan results
-
-Initial Scan Attempt:
-
-The first scan was a full default scan on the subnet
-
+## Initial Scan Attempt (Full Scan)
+Command:
 nmap <host_ip>
 
-Result:
-
+**Result:**
 Nmap scan report for <host_ip>
-
 Host is up.
-
 All 1000 scanned ports on <host_ip> are in ignored states.
-
 Not shown: 1000 filtered tcp ports (no-response)
-
 Nmap done: 256 IP addresses (15 hosts up) scanned in 8748.67 seconds
 
-Scan took ~2 hours 25 minutes.
+- Scan duration: **~2 hours 25 minutes**.  
+- All ports were filtered (likely due to firewall/network rules).  
+- **Limitation:** Too time-consuming and produced limited usable data.  
 
-All ports were filtered, so no open ports were detected.
+## Fast Scan Method
+To achieve results more efficiently, a fast scan was performed:  
 
-Due to time constraints and filtered ports, this scan was not practical for submission.
-
-
-Fast Scan Method:
-To obtain results quickly, a fast scan was used
-
-Ping scan to detect live hosts
-
+1. **Ping Scan (live hosts detection):**
 nmap -sn <host_ip>.0/24
 
-
-Fast port scan of a single host:
+2. **Fast Port Scan of a Single Host:**
 nmap -T4 -F <host_ip>
 
--T4 → faster timing
+markdown
+Copy code
+- `-T4` → faster timing.  
+- `-F` → scans only the 100 most common ports.  
 
--F → scan only 100 most common ports
+3. **Save Results:**
+nmap -T4 -F <host_ip> -oN fast_scan.txt
 
+**Outcome:** Results were successfully saved in `fast_scan.txt` for documentation and submission.  
 
-Save results to a text file:
-nmap -T4 -F <host_ip> -oN fast scan.txt
+## Results Interpretation
+- **Host is up** → Target device is online.  
+- **Filtered ports** → Firewall or security filters blocked responses.  
+- **Fast Scan** → Completed within minutes and provided practical results compared to the full scan.  
 
-Results are saved in fast scan.txt, ready for GitHub.
-
-Results Interpretation
-
-Host is up: Device is online.
-
-Filtered ports: Blocked by firewall or network filter.
-
-Fast scan: Completed in minutes, showing online hosts and open ports (if any).
-
-This method was more practical than the full scan.
-
-
-References
-Nmap Official Documentation,
-Kali Linux Tools,
-Wireshark User Guide.
-
-Author:
-
-Name: Anushka Jana
-
-Project: Network Scanning using Nmap (Full Scan & Fast Scan)# Nmap-network-scan-1
+## References
+- [Nmap Official Documentation](https://nmap.org/book/)  
+- Kali Linux Tools Documentation  
+- Wireshark User Guide
+- 
+## Author
+- **Name:** Anushka Jana  
+- **Project:** Network Scanning using Nmap (Full Scan & Fast Scan)  
